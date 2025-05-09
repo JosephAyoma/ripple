@@ -568,13 +568,76 @@
         </div>
     </section>
 
+    <!-- Terms and Conditions Modal -->
+<div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="termsModalLabel">Terms and Conditions</h5>
+          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h6>1. Acceptance of Terms</h6>
+          <p>By accessing and using the Ripple Education Drivers (Ripple-EDD) website, you agree to be bound by these Terms and Conditions and our Privacy Policy.</p>
+  
+          <h6>2. Use of Content</h6>
+          <p>All content on this website, including text, images, videos, and logos, is the property of Ripple-EDD and may not be reused or reproduced without permission.</p>
+  
+          <h6>3. User Responsibilities</h6>
+          <p>You agree to use this website only for lawful purposes. You must not misuse the website or attempt unauthorized access to any part of it.</p>
+  
+          <h6>4. Links to Third-Party Sites</h6>
+          <p>This website may contain links to external websites. We are not responsible for the content or practices of those third-party sites.</p>
+  
+          <h6>5. Disclaimer</h6>
+          <p>The website and its content are provided "as is" without warranty of any kind. We do not guarantee the accuracy or availability of any information provided.</p>
+  
+          <h6>6. Changes to Terms</h6>
+          <p>We reserve the right to update these Terms and Conditions at any time. Continued use of the site means you accept any changes.</p>
+  
+          <h6>7. Contact</h6>
+          <p>If you have questions about these terms, please contact us through the form provided on the website.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
     <!-- Footer Section -->
     <footer>
         <div class="container">
-            <p>Contact | Social Media Links | Terms & Conditions | Privacy Policy</p>
+            <p>
+                &copy; <span id="currentYear"></span> Ripple Education Drivers. All rights reserved.|
+                <a href="https://www.facebook.com/YourPage" target="_blank" class="mx-2">
+                    <i class="fab fa-facebook fa-lg"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/YourProfile" target="_blank" class="mx-2">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a href="https://www.tiktok.com/@YourProfile" target="_blank" class="mx-2">
+                    <i class="fab fa-tiktok fa-lg"></i>
+                </a>
+                <a href="https://www.instagram.com/YourProfile" target="_blank" class="mx-2">
+                    <i class="fab fa-instagram fa-lg"></i>
+                </a>
+                <a href="https://www.youtube.com/YourChannel" target="_blank" class="mx-2">
+                    <i class="fab fa-youtube fa-lg"></i>
+                </a>
+                |
+                <a href="#" data-toggle="modal" data-target="#termsModal">Terms & Conditions</a> |
+                <a href="#" data-toggle="modal" data-target="#termsModal">Privacy Policy</a>
+            </p>
         </div>
     </footer>
-
+    
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+      </script>
     <!-- Bootstrap JS & jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
